@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+I<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -83,6 +83,12 @@
     }
 
     window.addEventListener("resize", resizeGame);
+    
+    window.RufflePlayer = window.RufflePlayer || {};
+    window.RufflePlayer.config = {
+        // Forces Ruffle to report its capability version as Flash Player 6
+        "playerVersion": 6
+    };
 
     window.addEventListener("DOMContentLoaded", () => {
       resizeGame();
